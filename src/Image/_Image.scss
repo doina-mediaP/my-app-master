@@ -1,16 +1,16 @@
 .image-search {
   .img{
-    height: 150px;
-    width: 150px;
+    height: var(--height);
+    width: var(--width);
+    position: relative;
     .image {
-
       object-fit: cover;
     }
   }
 }
 
 .hidden {
-  visibility: hidden;
+  display: none;
 }
 
 .visible {
@@ -19,11 +19,11 @@
 
 .lds-spinner {
   color: official;
-  display: inline-block;
-  position: relative;
-  height: 150px;
-  width: 150px;
-  margin: 50px;
+  //display: inline-block;
+  position: absolute;
+  // height: 150px;
+  // width: 150px;
+  //margin: 50px;
 }
 
 .lds-spinner div {
