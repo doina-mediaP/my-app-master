@@ -11,7 +11,6 @@
     "@typescript-eslint/eslint-plugin": "2.x",
     "@typescript-eslint/parser": "2.x",
     "axios": "^0.19.2",
-    "babel-eslint": "10.x",
     "babel-jest": "^24.9.0",
     "babel-loader": "8.1.0",
     "babel-plugin-named-asset-import": "^0.3.6",
@@ -78,7 +77,8 @@
     ],
     "extends": [
       "react-app",
-      "plugin:prettier/recommended"
+      "plugin:prettier/recommended",
+      "@imaginary-cloud/react"
     ],
     "rules": {
       "prettier/prettier": "warn"
@@ -152,6 +152,8 @@
     ]
   },
   "devDependencies": {
+    "@imaginary-cloud/prettier-config": "^1.0.0",
+    "babel-eslint": "^10.1.0",
     "dotenv": "^8.2.0",
     "eslint": "6.x",
     "eslint-config-prettier": "^6.11.0",
@@ -160,5 +162,6 @@
     "eslint-plugin-react-hooks": "^2.0.0",
     "prettier": "^2.0.5",
     "react-hooks": "^1.0.1"
-  }
+  },
+  "prettier": "@imaginary-cloud/prettier-config"
 }

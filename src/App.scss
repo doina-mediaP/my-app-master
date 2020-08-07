@@ -1,5 +1,5 @@
-@import "./Image/Image";
-@import "./variable.scss";
+@import './Image/Image';
+@import './variable.scss';
 
 .image-search {
   display: flex;
@@ -9,8 +9,6 @@
   width: 100%;
   max-width: 1400px;
   margin: 0 auto;
-  
-
 
   &__image-list {
     display: flex;
@@ -18,26 +16,25 @@
     justify-content: center;
     margin-top: 50px;
   }
-.img{
-  position: relative;
-  overflow: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  height: var(--height);
-  width: var(--width);
-  margin: 0 20px 20px 0;
-  &:nth-child(5n) {
-    margin: 0 0 20px 0;
+  .img {
+    position: relative;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: var(--height);
+    width: var(--width);
+    margin: 0 20px 20px 0;
+    &:nth-child(5n) {
+      margin: 0 0 20px 0;
+    }
   }
-
-}
   &__image {
     object-fit: cover;
     position: absolute;
@@ -46,10 +43,10 @@
     max-height: 100%;
     top: 50%;
     left: 50%;
-    -webkit-transform: translate(-50%,-50%);
-    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
   }
-  &__btn{
+  &__btn {
     display: inline-block;
     padding: 10px 15px;
     background: var(--color-primary);
@@ -59,15 +56,15 @@
     min-width: 100px;
     cursor: pointer;
     font-size: 16px;
-    transition: .3s;
-    &:focus{
+    transition: 0.3s;
+    &:focus {
       outline: none;
     }
-    &:hover{
-      background: #D095A1;
+    &:hover {
+      background: #d095a1;
       color: var(--white);
     }
-    &:last-child{
+    &:last-child {
       margin-right: 0;
     }
   }
@@ -75,26 +72,26 @@
     display: flex;
     align-items: center;
 
-    .input{
+    .input {
       width: calc(100% - 100px);
       display: flex;
       margin-right: 30px;
-      input{
+      input {
         padding: 10px 7px;
         width: 100%;
-        border: 1px solid var(--color-primary);;
-        transition: .3s;
-        &:hover{
+        border: 1px solid var(--color-primary);
+        transition: 0.3s;
+        &:hover {
           border: 1px solid var(--color-primary);
         }
-        &:focus{
+        &:focus {
           border: 1px solid var(--color-primary);
           outline: none;
         }
       }
     }
   }
-  .noFound{
+  .noFound {
     margin: 0;
     font-size: 30px;
     height: calc(100vh - 150px);
